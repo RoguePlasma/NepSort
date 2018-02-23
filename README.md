@@ -7,9 +7,15 @@ characters from a set.
  * Filtering out characters based on JSON based filters.
  * Shareable links of sorter results.
  * Versioning of sorter data - you may want to add characters and resources over time. Versioning keeps shareable links valid even if the base character data is changed.
- 
-The version in this repo is built for characters from the [Touhou Project](https://en.wikipedia.org/wiki/Touhou_Project)
-game series, but the sorter can be easily edited to create any custom sorter desired.
+
+The version in this repo is built for characters from the
+[Hyperdimension Neptunia](https://en.wikipedia.org/wiki/Hyperdimension_Neptunia)
+game series, but the sorter can be easily edited to create any custom sorter
+desired.
+
+This was forked from [execfera/charasort](https://github.com/execfera/charasort)
+which is a character sorter dedicated to the
+[Touhou Project](https://en.wikipedia.org/wiki/Touhou_Project) game series.
 
 ## Creating Your Own Sorter
 This is a list of things you need to change for your sorter, for each file.
@@ -28,7 +34,7 @@ This is a list of things you need to change for your sorter, for each file.
  * `src/js/data/YYYY-MM-DD.js`
 
     Creating your own set of data is relatively simple. First, change the `dataSetVersion` date to the date when you are creating the dataset. Example: `dataSetVersion = 2018-02-20`. The actual filename does not matter, it is just for your own easy reference.
-    
+
     Further down, each file comprises of two sets of data: `characterData` and `options`.
 
     `characterData` is an array of objects filled with character data. Its layout is as follows.
@@ -144,7 +150,7 @@ This is a list of things you need to change for your sorter, for each file.
 
 ## Updating Your Own Sorter
 
-When you need to add more characters to your sorter, you must create a new data file with a new date, and include it in your `index.html` file under the `<script src="src/js/data.js"></script>` line, while keeping your previous data files also included. 
+When you need to add more characters to your sorter, you must create a new data file with a new date, and include it in your `index.html` file under the `<script src="src/js/data.js"></script>` line, while keeping your previous data files also included.
 
 The script will automatically get the latest version, but will retain the previous versions in case someone keeps a shareable link from one of the previous versions.
 
