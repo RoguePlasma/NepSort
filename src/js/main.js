@@ -50,10 +50,12 @@ let pointerPrev         = 0;
 let finalCharacters = [];
 let loading         = false;
 let totalBattles    = 0;
-let storedSaveType  = localStorage.getItem('saveType');
+let sorterURL       = window.location.host + window.location.pathname;
+let storedSaveType  = localStorage.getItem(`${sorterURL}_saveType`);
 
 /** Initialize script. */
 function init() {
+
   /** Define button behavior. */
   document.querySelector('.starting.start.button').addEventListener('click', start);
   document.querySelector('.starting.load.button').addEventListener('click', loadProgress);
@@ -104,7 +106,7 @@ function init() {
   document.querySelector('.image.selector').insertAdjacentElement('beforeend', document.createElement('select'));
 
   /** Initialize image quantity selector for results. */
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 0; i <= 10; i++) {
     const select = document.createElement('option');
     select.value = i;
     select.text = i;
@@ -138,6 +140,8 @@ function start() {
   characterDataToSort = characterData.slice(0);
 
   /** Check selected options and convert to boolean array form. */
+  optTaken = [];
+
   options.forEach(opt => {
     if ('sub' in opt) {
       if (!document.getElementById(`cbgroup-${opt.key}`).checked) optTaken.push(false);
@@ -180,13 +184,19 @@ function start() {
           return subList;
         }, []);
         characterDataToSort = characterDataToSort.filter(char => {
-          return char.opts[opt.key].some(key => subArray.includes(key));
+          if (!(opt.key in char.opts)) console.warn(`Warning: ${opt.key} not set for ${char.name}.`);
+          return opt.key in char.opts && char.opts[opt.key].some(key => subArray.includes(key));
         });
       }
     } else if (optTaken[index]) {
       characterDataToSort = characterDataToSort.filter(char => !char.opts[opt.key]);
     }
   });
+
+  if (characterDataToSort.length < 2) {
+    alert('Cannot sort with less than two characters. Please reselect.');
+    return;
+  }
 
   /** Shuffle character array with timestamp seed. */
   timestamp = timestamp || new Date().getTime();
@@ -271,13 +281,21 @@ function display() {
   const leftChar        = characterDataToSort[leftCharIndex];
   const rightChar       = characterDataToSort[rightCharIndex];
 
+  const charNameDisp = name => {
+    const charName = reduceTextWidth(name, 'Arial 12.8px', 220);
+    const charTooltip = name !== charName ? name : '';
+    return `<p title="${charTooltip}">${charName}</p>`;
+  };
+
   progressBar(`Battle No. ${battleNo}`, percent);
 
   document.querySelector('.left.sort.image').src = leftChar.img;
   document.querySelector('.right.sort.image').src = rightChar.img;
 
-  document.querySelector('.left.sort.text > p').innerHTML = leftChar.name;
-  document.querySelector('.right.sort.text > p').innerHTML = rightChar.name;
+  
+
+  document.querySelector('.left.sort.text').innerHTML = charNameDisp(leftChar.name);
+  document.querySelector('.right.sort.text').innerHTML = charNameDisp(rightChar.name);
 
   /** Autopick if choice has been given. */
   if (choices.length !== battleNo - 1) {
@@ -461,9 +479,17 @@ function result(imageNum = 3) {
   document.querySelector('.info').style.display = 'none';
 
   const header = '<div class="result head"><div class="left">Order</div><div class="right">Name</div></div>';
-  const timeStr = `This sorter was completed on ${new Date(timestamp + timeTaken).toString()} and took ${msToReadableTime(timeTaken)}.`;
-  const imgRes = (char, num) => `<div class="result image"><div class="left"><span>${num}</span></div><div class="right"><img src="${char.img}"><div>${char.name}</div></div></div>`;
-  const res = (char, num) => `<div class="result"><div class="left">${num}</div><div class="right">${char.name}</div></div>`;
+  const timeStr = `This sorter was completed on ${new Date(timestamp + timeTaken).toString()} and took ${msToReadableTime(timeTaken)}. <a href="${location.protocol}//${sorterURL}">Do another sorter?</a>`;
+  const imgRes = (char, num) => {
+    const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
+    const charTooltip = char.name !== charName ? char.name : '';
+    return `<div class="result image"><div class="left"><span>${num}</span></div><div class="right"><img src="${char.img}"><div><span title="${charTooltip}">${charName}</span></div></div></div>`;
+  }
+  const res = (char, num) => {
+    const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
+    const charTooltip = char.name !== charName ? char.name : '';
+    return `<div class="result"><div class="left">${num}</div><div class="right"><span title="${charTooltip}">${charName}</span></div></div>`;
+  }
 
   let rankNum       = 1;
   let tiedRankNum   = 1;
@@ -527,11 +553,11 @@ function undo() {
 function saveProgress(saveType) {
   const saveData = generateSavedata();
 
-  localStorage.setItem('saveData', saveData);
-  localStorage.setItem('saveType', saveType);
+  localStorage.setItem(`${sorterURL}_saveData`, saveData);
+  localStorage.setItem(`${sorterURL}_saveType`, saveType);
 
   if (saveType !== 'Autosave') {
-    const saveURL = `${window.location.origin}${window.location.pathname}?${saveData}`;
+    const saveURL = `${location.protocol}//${sorterURL}?${saveData}`;
     const inProgressText = 'You may click Load Progress after this to resume, or use this URL.';
     const finishedText = 'You may use this URL to share this result, or click Load Last Result to view it again.';
 
@@ -543,7 +569,7 @@ function saveProgress(saveType) {
  * Load progress from local browser storage.
 */
 function loadProgress() {
-  const saveData = localStorage.getItem('saveData');
+  const saveData = localStorage.getItem(`${sorterURL}_saveData`);
 
   if (saveData) decodeQuery(saveData);
 }
@@ -554,8 +580,8 @@ function loadProgress() {
 function clearProgress() {
   storedSaveType = '';
 
-  localStorage.removeItem('saveData');
-  localStorage.removeItem('saveType');
+  localStorage.removeItem(`${sorterName}_saveData`);
+  localStorage.removeItem(`${sorterName}_saveType`);
 
   document.querySelectorAll('.starting.start.button').forEach(el => el.style['grid-row'] = 'span 6');
   document.querySelectorAll('.starting.load.button').forEach(el => el.style.display = 'none');
@@ -569,10 +595,19 @@ function generateImage() {
   html2canvas(document.querySelector('.results')).then(canvas => {
     const dataURL = canvas.toDataURL();
     const imgButton = document.querySelector('.finished.getimg.button');
+    const resetButton = document.createElement('a');
 
     imgButton.removeEventListener('click', generateImage);
     imgButton.innerHTML = '';
-    imgButton.insertAdjacentHTML('beforeend', `<a href="${dataURL}" download="${filename}">Download Image</a>`);
+    imgButton.insertAdjacentHTML('beforeend', `<a href="${dataURL}" download="${filename}">Download Image</a><br><br>`);
+
+    resetButton.insertAdjacentText('beforeend', 'Reset');
+    resetButton.addEventListener('click', (event) => {
+      imgButton.addEventListener('click', generateImage);
+      imgButton.innerHTML = 'Generate Image';
+      event.stopPropagation();
+    });
+    imgButton.insertAdjacentElement('beforeend', resetButton);
   });
 }
 
@@ -613,11 +648,11 @@ function setLatestDataset() {
 /** Populate option list. */
 function populateOptions() {
   const optList = document.querySelector('.options');
-  const optInsert = (name, id, tooltip = '', checked = true, disabled = false) => {
-    return `<div><label class="${tooltip?'tooltip':''}" title="${tooltip}"><input id="cb-${id}" type="checkbox" ${checked?'checked':''} ${disabled?'disabled':''}> ${name}</label></div>`;
+  const optInsert = (name, id, tooltip, checked = true, disabled = false) => {
+    return `<div><label title="${tooltip?tooltip:name}"><input id="cb-${id}" type="checkbox" ${checked?'checked':''} ${disabled?'disabled':''}> ${name}</label></div>`;
   };
-  const optInsertLarge = (name, id, tooltip = '', checked = true) => {
-    return `<div class="large option"><label class="${tooltip?'tooltip':''}" title="${tooltip}"><input id="cbgroup-${id}" type="checkbox" ${checked?'checked':''}> ${name}</label></div>`;
+  const optInsertLarge = (name, id, tooltip, checked = true) => {
+    return `<div class="large option"><label title="${tooltip?tooltip:name}"><input id="cbgroup-${id}" type="checkbox" ${checked?'checked':''}> ${name}</label></div>`;
   };
 
   /** Clear out any previous options. */
@@ -786,6 +821,28 @@ function msToReadableTime (milliseconds) {
 	if (minutes) content.push(minutes + " minute" + (minutes > 1 ? "s" : ""));
 	if (t) content.push(t + " second" + (t > 1 ? "s" : ""));
   return content.slice(0,3).join(', ');
+}
+
+/**
+ * Reduces text to a certain rendered width.
+ *
+ * @param {string} text Text to reduce.
+ * @param {string} font Font applied to text. Example "12px Arial".
+ * @param {number} width Width of desired width in px.
+ */
+function reduceTextWidth(text, font, width) {
+  const canvas = reduceTextWidth.canvas || (reduceTextWidth.canvas = document.createElement("canvas"));
+  const context = canvas.getContext("2d");
+  context.font = font;
+  if (context.measureText(text).width < width * 0.8) {
+    return text;
+  } else {
+    let reducedText = text;
+    while (context.measureText(reducedText).width + context.measureText('..').width > width * 0.8) {
+      reducedText = reducedText.slice(0, -1);
+    }
+    return reducedText + '..';
+  }
 }
 
 window.onload = init;
