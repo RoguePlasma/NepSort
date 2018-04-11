@@ -55,71 +55,380 @@ dataSet[dataSetVersion].options = [
 
 dataSet[dataSetVersion].characterData = [
   {
-    name: "Neptune",
-    img: "c5DqpgX.png",
-    opts: {
-      game: [ "hdn", "mk2", "v", "vii", "pp", "gbh", "au", "zomb", "sega", "fgo", "nnc", "rb1", "rb2", "rb3", "viir" ],
-      type: [ "cpu" ]
-    }
+    name: "5pb. (Lyrica)",
+    img: "5pb._Lyrica.png",
+    opts: {},
   },
   {
-    name: "Noire",
-    img: "tJnkSzK.png",
-    opts: {
-      game: [ "hdn", "mk2", "v", "vii", "pp", "gbh", "au", "zomb", "fgo", "nnc", "rb1", "rb2", "rb3", "viir" ],
-      type: [ "cpu" ]
-    }
+    name: "Abaddon",
+    img: "Abaddon.png",
+    opts: {},
   },
   {
-    name: "Vert",
-    img: "0YT7QlS.png",
-    opts: {
-      game: [ "hdn", "mk2", "v", "vii", "pp", "gbh", "au", "zomb", "fgo", "nnc", "rb1", "rb2", "rb3", "viir" ],
-      type: [ "cpu" ]
-    }
+    name: "Abnes",
+    img: "Abnes.png",
+    opts: {},
+  },
+  {
+    name: "Affimojas",
+    img: "Affimojas.png",
+    opts: {},
+  },
+  {
+    name: "Anonydeath",
+    img: "Anonydeath.png",
+    opts: {},
+  },
+  {
+    name: "Arfoire",
+    img: "Arfoire.png",
+    opts: {},
+  },
+  {
+    name: "Azna=Leb",
+    img: "Azna=Leb.png",
+    opts: {},
+  },
+  {
+    name: "Bamo",
+    img: "Bamo.png",
+    opts: {},
   },
   {
     name: "Blanc",
-    img: "NWlZud3.png",
-    opts: {
-      game: [ "hdn", "mk2", "v", "vii", "pp", "gbh", "au", "zomb", "fgo", "nnc", "rb1", "rb2", "rb3", "viir" ],
-      type: [ "cpu" ]
-    }
+    img: "Blanc.png",
+    opts: {},
   },
   {
-    name: "Purple Heart",
-    img: "qdveFSy.png",
-    opts: {
-      game: [ "hdn", "mk2", "v", "vii", "pp", "gbh", "au", "zomb", "sega", "fgo", "nnc", "rb1", "rb2", "rb3", "viir" ],
-      type: [ "cpu" ],
-      form: true,
-    }
+    name: "Broccoli",
+    img: "Broccoli.png",
+    opts: {},
   },
   {
-    name: "Black Heart",
-    img: "ptGp0x4.png",
-    opts: {
-      game: [ "hdn", "mk2", "v", "vii", "pp", "gbh", "au", "zomb", "fgo", "nnc", "rb1", "rb2", "rb3", "viir" ],
-      type: [ "cpu" ],
-      form: true,
-    }
+    name: "Cave",
+    img: "Cave.png",
+    opts: {},
   },
   {
-    name: "Green Heart",
-    img: "vBKdDm4.png",
-    opts: {
-      game: [ "hdn", "mk2", "v", "vii", "pp", "gbh", "au", "zomb", "fgo", "nnc", "rb1", "rb2", "rb3", "viir" ],
-      type: [ "cpu" ],
-      form: true,
-    }
+    name: "CFW Brave",
+    img: "CFW_Brave.png",
+    opts: {},
   },
   {
-    name: "White Heart",
-    img: "A7ZnuHo.png",
+    name: "CFW Judge",
+    img: "CFW_Judge.png",
+    opts: {},
+  },
+  {
+    name: "CFW Magic",
+    img: "CFW_Magic.png",
+    opts: {},
+  },
+  {
+    name: "CFW Trick",
+    img: "CFW_Trick.png",
+    opts: {},
+  },
+  {
+    name: "Cheekama",
+    img: "Cheekama.png",
+    opts: {},
+  },
+  {
+    name: "Chika Hakozaki",
+    img: "Chika_Hakozaki.png",
+    opts: {},
+  },
+  {
+    name: "Chuuko",
+    img: "Chuuko.png",
+    opts: {},
+  },
+  {
+    name: "Compa",
+    img: "Compa.png",
+    opts: {},
+  },
+  {
+    name: "Compile",
+    img: "Compile.png",
+    opts: {},
+  },
+  {
+    name: "Copypaste",
+    img: "Copypaste.png",
+    opts: {},
+  },
+  {
+    name: "Croire",
+    img: "Croire.png",
+    opts: {},
+  },
+  {
+    name: "CyberConnect2",
+    img: "CyberConnect2.png",
+    opts: {},
+  },
+  {
+    name: "Deco",
+    img: "Deco.png",
+    opts: {},
+  },
+  {
+    name: "Dengekiko",
+    img: "Dengekiko.png",
+    opts: {},
+  },
+  {
+    name: "Dogoo Lady",
+    img: "Dogoo_Lady.png",
+    opts: {},
+  },
+  {
+    name: "Dogoo Man",
+    img: "Dogoo_Man.png",
+    opts: {},
+  },
+  {
+    name: "Falcom",
+    img: "Falcom.png",
+    opts: {},
+  },
+  {
+    name: "Falcom (Young)",
+    img: "Falcom_Young.png",
+    opts: {},
+  },
+  {
+    name: "Famitsu",
+    img: "Famitsu.png",
+    opts: {},
+  },
+  {
+    name: "Financier",
+    img: "Financier.png",
+    opts: {},
+  },
+  {
+    name: "Furapura",
+    img: "Furapura.png",
+    opts: {},
+  },
+  {
+    name: "God Eater",
+    img: "God_Eater.png",
+    opts: {},
+  },
+  {
+    name: "Guild Woman",
+    img: "Guild_Woman.png",
+    opts: {},
+  },
+  {
+    name: "Gust",
+    img: "Gust.png",
+    opts: {},
+  },
+  {
+    name: "C-Sha",
+    img: "C-Sha.png",
+    opts: {},
+  },
+  {
+    name: "B-Sha",
+    img: "B-Sha.png",
+    opts: {},
+  },
+  {
+    name: "S-Sha",
+    img: "S-Sha.png",
+    opts: {},
+  },
+  {
+    name: "K-Sha",
+    img: "K-Sha.png",
+    opts: {},
+  },
+  {
+    name: "Histoire",
+    img: "Histoire.png",
+    opts: {},
+  },
+  {
+    name: "Histoire (Ultra Dimension)",
+    img: "Histoire_UltraDimension.png",
+    opts: {},
+  },
+  {
+    name: "Horyuchu",
+    img: "Horyuchu.png",
+    opts: {},
+  },
+  {
+    name: "IF",
+    img: "IF.png",
+    opts: {},
+  },
+  {
+    name: "Kei Jinguji",
+    img: "Kei_Jinguji.png",
+    opts: {},
+  },
+  {
+    name: "Linda (Underling)",
+    img: "Linda_Underling.png",
+    opts: {},
+  },
+  {
+    name: "MAGES.",
+    img: "MAGES.png",
+    opts: {},
+  },
+  {
+    name: "MarvelousAQL",
+    img: "MarvelousAQL.png",
+    opts: {},
+  },
+  {
+    name: "Million Arthur",
+    img: "Million_Arthur.png",
+    opts: {},
+  },
+  {
+    name: "Mina Nishizawa",
+    img: "Mina_Nishizawa.png",
+    opts: {},
+  },
+  {
+    name: "Mr. Badd",
+    img: "Mr._Badd.png",
+    opts: {},
+  },
+  {
+    name: "Nepgear",
+    img: "Nepgear.png",
+    opts: {},
+  },
+  {
+    name: "Nepgya",
+    img: "Nepgya.png",
+    opts: {},
+  },
+  {
+    name: "Neptune",
+    img: "Neptune.png",
     opts: {
-      game: [ "hdn", "mk2", "v", "vii", "pp", "gbh", "au", "zomb", "fgo", "nnc", "rb1", "rb2", "rb3", "viir" ],
-      type: [ "cpu" ],
-      form: true,
-    }
+      type: ['cpu'],
+    },
+  },
+  {
+    name: "Neptune (Ultra Dimension)",
+    img: "Neptune_UltraDimension.png",
+    opts: {},
+  },
+  {
+    name: "NISA",
+    img: "NISA.png",
+    opts: {},
+  },
+  {
+    name: "Nitroplus",
+    img: "Nitroplus.png",
+    opts: {},
+  },
+  {
+    name: "Noire",
+    img: "Noire.png",
+    opts: {},
+  },
+  {
+    name: "Order Woman",
+    img: "Order_Woman.png",
+    opts: {},
+  },
+  {
+    name: "Peashy",
+    img: "Peashy.png",
+    opts: {},
+  },
+  {
+    name: "Plutia",
+    img: "Plutia.png",
+    opts: {},
+  },
+  {
+    name: "Ram",
+    img: "Ram.png",
+    opts: {},
+  },
+  {
+    name: "Raw Meat",
+    img: "Raw_Meat.png",
+    opts: {},
+  },
+  {
+    name: "RED",
+    img: "RED.png",
+    opts: {},
+  },
+  {
+    name: "Regu",
+    img: "Regu.png",
+    opts: {},
+  },
+  {
+    name: "Rei Ryghts",
+    img: "Rei_Ryghts.png",
+    opts: {},
+  },
+  {
+    name: "Rom",
+    img: "Rom.png",
+    opts: {},
+  },
+  {
+    name: "Steamax",
+    img: "Steamax.png",
+    opts: {},
+  },
+  {
+    name: "Stella",
+    img: "Stella.png",
+    opts: {},
+  },
+  {
+    name: "Tekken",
+    img: "Tekken.png",
+    opts: {},
+  },
+  {
+    name: "Umio",
+    img: "Umio.png",
+    opts: {},
+  },
+  {
+    name: "Uni",
+    img: "Uni.png",
+    opts: {},
+  },
+  {
+    name: "Uzume Tennouboshi",
+    img: "Uzume_Tennouboshi.png",
+    opts: {},
+  },
+  {
+    name: "Vert",
+    img: "Vert.png",
+    opts: {},
+  },
+  {
+    name: "Warechu",
+    img: "Warechu.png",
+    opts: {},
+  },
+  {
+    name: "Zolgelicoff Tetsu",
+    img: "Zolgelicoff_Tetsu.png",
+    opts: {},
   },
 ];
