@@ -541,4 +541,109 @@ dataSet[dataSetVersion].characterData = [
     img: "Yellow_Heart.png",
     opts: {},
   },
+  {
+    name: "Ai Masujima",
+    img: "Ai_Masujima.png",
+    opts: {},
+  },
+  {
+    name: "Blossom Aisen",
+    img: "Blossom_Aisen.png",
+    opts: {},
+  },
+  {
+    name: "Ein Al",
+    img: "Ein_Al.png",
+    opts: {},
+  },
+  {
+    name: "Estelle",
+    img: "Estelle.png",
+    opts: {},
+  },
+  {
+    name: "General G",
+    img: "General_G.png",
+    opts: {},
+  },
+  {
+    name: "Lady Wac",
+    img: "Lady Wac.png",
+    opts: {},
+  },
+  {
+    name: "Lee-Fi",
+    img: "Lee-Fi.png",
+    opts: {},
+  },
+  {
+    name: "Lid",
+    img: "Lid.png",
+    opts: {},
+  },
+  {
+    name: "Little Rain",
+    img: "Little_Rain.png",
+    opts: {},
+  },
+  {
+    name: "Moru",
+    img: "Moru.png",
+    opts: {},
+  },
+  {
+    name: "Poona",
+    img: "Poona.png",
+    opts: {},
+  },
+  {
+    name: "Resta",
+    img: "Resta.png",
+    opts: {},
+  },
+  {
+    name: "Ryuka",
+    img: "Ryuka.png",
+    opts: {},
+  },
+  {
+    name: "Sango",
+    img: "Sango.png",
+    opts: {},
+  },
+  {
+    name: "Saori",
+    img: "Saori.png",
+    opts: {},
+  },
+  {
+    name: "Sting",
+    img: "Sting.png",
+    opts: {},
+  },
+  {
+    name: "Tamsoft",
+    img: "Tamsoft.png",
+    opts: {},
+  },
+  {
+    name: "Tiara (Fairy Fencer F)",
+    img: "Tiara_(Fairy_Fencer_F).png",
+    opts: {},
+  },
+  {
+    name: "Tsunemi",
+    img: "Tsunemi.png",
+    opts: {},
+  },
+  {
+    name: "Vio",
+    img: "Vio.png",
+    opts: {},
+  },
+  {
+    name: "Wyn",
+    img: "Wyn.png",
+    opts: {},
+  },
 ];
