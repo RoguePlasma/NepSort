@@ -431,4 +431,114 @@ dataSet[dataSetVersion].characterData = [
     img: "Zolgelicoff_Tetsu.png",
     opts: {},
   },
+  {
+    name: "Black Heart (Next)",
+    img: "Black_Heart_(Next).png",
+    opts: {},
+  },
+  {
+    name: "Black Heart",
+    img: "Black_Heart.png",
+    opts: {},
+  },
+  {
+    name: "Black Heart (Ultra Dimension)",
+    img: "Black_Heart_(Ultra_Dimension).png",
+    opts: {},
+  },
+  {
+    name: "Black Sister",
+    img: "Black_Sister.png",
+    opts: {},
+  },
+  {
+    name: "Blanc (Ultra Dimension)",
+    img: "Blanc_(Ultra_Dimension).png",
+    opts: {},
+  },
+  {
+    name: "CPU of Chaos (Rei Ryghts)",
+    img: "CPU_of_Chaos_(Rei_Ryghts).png",
+    opts: {},
+  },
+  {
+    name: "Green Heart (Next)",
+    img: "Green_Heart_(Next).png",
+    opts: {},
+  },
+  {
+    name: "Green Heart",
+    img: "Green_Heart.png",
+    opts: {},
+  },
+  {
+    name: "Green Heart (Ultra Dimension)",
+    img: "Green_Heart_(Ultra_Dimension).png",
+    opts: {},
+  },
+  {
+    name: "Iris Heart",
+    img: "Iris_Heart.png",
+    opts: {},
+  },
+  {
+    name: "Noire (Ultra Dimension)",
+    img: "Noire_(Ultra_Dimension).png",
+    opts: {},
+  },
+  {
+    name: "Orange Heart",
+    img: "Orange_Heart.png",
+    opts: {},
+  },
+  {
+    name: "Purple Heart (Next)",
+    img: "Purple_Heart_(Next).png",
+    opts: {},
+  },
+  {
+    name: "Purple Heart",
+    img: "Purple_Heart.png",
+    opts: {},
+  },
+  {
+    name: "Purple Sister",
+    img: "Purple_Sister.png",
+    opts: {},
+  },
+  {
+    name: "Vert (Ultra Dimension)",
+    img: "Vert_(Ultra_Dimension).png",
+    opts: {},
+  },
+  {
+    name: "White Heart (Next)",
+    img: "White_Heart_(Next).png",
+    opts: {},
+  },
+  {
+    name: "White Heart",
+    img: "White_Heart.png",
+    opts: {},
+  },
+  {
+    name: "White Heart (Ultra Dimension)",
+    img: "White_Heart_(Ultra_Dimension).png",
+    opts: {},
+  },
+  {
+    name: "White Sister (Ram)",
+    img: "White_Sister_(Ram).png",
+    opts: {},
+  },
+  {
+    name: "White Sister (Rom)",
+    img: "White_Sister_(Rom).png",
+    opts: {},
+  },
+  {
+    name: "Yellow Heart",
+    img: "Yellow_Heart.png",
+    opts: {},
+  },
 ];
