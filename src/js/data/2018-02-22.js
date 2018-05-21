@@ -646,4 +646,79 @@ dataSet[dataSetVersion].characterData = [
     img: "Wyn.png",
     opts: {},
   },
+  {
+    name: "†Black_Cat_Princess†",
+    img: "Black_Cat_Princess.png",
+    opts: {},
+  },
+  {
+    name: "Bouquet",
+    img: "Bouquet.png",
+    opts: {},
+  },
+  {
+    name: "Cheetah",
+    img: "Cheetah.png",
+    opts: {},
+  },
+  {
+    name: "Dark Knight",
+    img: "Dark_Knight.png",
+    opts: {},
+  },
+  {
+    name: "Demon King Jester",
+    img: "Demon_King_Jester.png",
+    opts: {},
+  },
+  {
+    name: "Dreamcast",
+    img: "Dreamcast.png",
+    opts: {},
+  },
+  {
+    name: "Game Gear",
+    img: "Game_Gear.png",
+    opts: {},
+  },
+  {
+    name: "GM",
+    img: "GM.png",
+    opts: {},
+  },
+  {
+    name: "Grim Reaper",
+    img: "Grim_Reaper.png",
+    opts: {},
+  },
+  {
+    name: "Hatsumi Sega",
+    img: "Hatsumi_Sega.png",
+    opts: {},
+  },
+  {
+    name: "Kiria",
+    img: "Kiria.png",
+    opts: {},
+  },
+  {
+    name: "Luke",
+    img: "Luke.png",
+    opts: {},
+  },
+  {
+    name: "Mega Drive",
+    img: "Mega_Drive.png",
+    opts: {},
+  },
+  {
+    name: "Minotauros",
+    img: "Minotauros.png",
+    opts: {},
+  },
+  {
+    name: "Sega Saturn",
+    img: "Sega_Saturn.png",
+    opts: {},
+  }
 ];
