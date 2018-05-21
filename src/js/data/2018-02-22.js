@@ -38,19 +38,19 @@ dataSet[dataSetVersion].options = [
     ]
   },
   {
-    name: "Remove alternate forms",
+    name: "Include alternate forms",
     key: "form",
-    tooltip: "Check this to remove alternate form counterparts to characters."
+    tooltip: "Check this to include alternate form counterparts to characters."
   },
   {
     name: "Remove different dimension duplicates",
     key: "dim",
-    tooltip: "Check this to remove alternate dimension counterparts to characters."
+    tooltip: "Check this to include alternate dimension counterparts to characters."
   },
   {
-    name: "Remove Non-Girls",
+    name: "Include Non-Girls",
     key: "notgirl",
-    tooltip: "Check this to remove all non-female characters."
+    tooltip: "Check this to include all non-female characters."
   }
 ];
 
