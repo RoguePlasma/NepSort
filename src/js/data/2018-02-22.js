@@ -43,7 +43,7 @@ dataSet[dataSetVersion].options = [
     tooltip: "Check this to include alternate form counterparts to characters."
   },
   {
-    name: "Remove different dimension duplicates",
+    name: "Include different dimension duplicates",
     key: "dim",
     tooltip: "Check this to include alternate dimension counterparts to characters."
   },
