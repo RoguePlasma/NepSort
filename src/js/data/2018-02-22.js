@@ -709,7 +709,7 @@ dataSet[dataSetVersion].characterData = [
     img: "Plutia.png",
     opts: {
       series: ['v', 'rb1', 'rb3', 'vii', 'viir', 'zomb', 'sega', 'fgo'],
-      type: ['cpu']
+      type: ['cpu'],
       form: false,
       dim: false,
       notgirl: false,
