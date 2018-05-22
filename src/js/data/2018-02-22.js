@@ -257,7 +257,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Compa",
     img: "Compa.png",
     opts: {
-      series: ['hdn', 'mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'viir', 'gbh', 'pp', 'zomb' 'fgo'],
+      series: ['hdn', 'mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'viir', 'gbh', 'pp', 'zomb', 'fgo'],
       type: ['mkr'],
       form: false,
       dim: false,
