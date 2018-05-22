@@ -829,7 +829,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Uni",
     img: "Uni.png",
     opts: {
-      series: ['mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'viir', 'au', 'fgo', 'zomb']
+      series: ['mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'viir', 'au', 'fgo', 'zomb'],
       type: ['cpu'],
       form: false,
       dim: false,
@@ -840,7 +840,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Uzume Tennouboshi",
     img: "Uzume_Tennouboshi.png",
     opts: {
-      series: ['vii', 'viir', 'sega', 'zomb', 'fgo', 'rb3']
+      series: ['vii', 'viir', 'sega', 'zomb', 'fgo', 'rb3'],
       type: ['cpu'],
       form: false,
       dim: false,
