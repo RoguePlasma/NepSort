@@ -764,7 +764,7 @@ dataSet[dataSetVersion].characterData = [
     img: "Rei_Ryghts.png",
     opts: {
       series: ['v', 'rb3'],
-      type: ['cpu']
+      type: ['cpu'],
       form: false,
       dim: false,
       notgirl: false,
