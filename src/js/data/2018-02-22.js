@@ -830,7 +830,7 @@ dataSet[dataSetVersion].characterData = [
     img: "Uni.png",
     opts: {
       series: ['mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'viir', 'au', 'fgo', 'zomb']
-      type: ['cpu']
+      type: ['cpu'],
       form: false,
       dim: false,
       notgirl: false,
@@ -841,7 +841,7 @@ dataSet[dataSetVersion].characterData = [
     img: "Uzume_Tennouboshi.png",
     opts: {
       series: ['vii', 'viir', 'sega', 'zomb', 'fgo', 'rb3']
-      type: ['cpu']
+      type: ['cpu'],
       form: false,
       dim: false,
       notgirl: false,
@@ -863,7 +863,7 @@ dataSet[dataSetVersion].characterData = [
     img: "Warechu.png",
     opts: {
       series: ['mk2', 'v', 'rb2', 'rb3', 'vii', 'viir', 'fgo'],
-      type: ['msr']
+      type: ['msr'],
       form: false,
       dim: false,
       notgirl: true,
@@ -874,7 +874,7 @@ dataSet[dataSetVersion].characterData = [
     img: "Zolgelicoff_Tetsu.png",
     opts: {
       series: ['vii', 'viir'],
-      type: ['mkr']
+      type: ['mkr'],
       form: false,
       dim: false,
       notgirl: true,
@@ -885,7 +885,7 @@ dataSet[dataSetVersion].characterData = [
     img: "Black_Heart_(Next).png",
     opts: {
       series: ['vii', 'viir'],
-      type: ['cpu']
+      type: ['cpu'],
       form: true,
       dim: false,
       notgirl: false,
@@ -907,7 +907,7 @@ dataSet[dataSetVersion].characterData = [
     img: "Black_Heart_(Ultra_Dimension).png",
     opts: {
       series: ['v', 'rb3', 'gbh'],
-      type: ['cpu']
+      type: ['cpu'],
       form: true,
       dim: true,
       notgirl: false,
@@ -940,7 +940,7 @@ dataSet[dataSetVersion].characterData = [
     img: "CPU_of_Chaos_(Rei_Ryghts).png",
     opts: {
       series: ['v', 'rb3'],
-      type: ['cpu']
+      type: ['cpu'],
       form: true,
       dim: false,
       notgirl: false,
@@ -951,7 +951,7 @@ dataSet[dataSetVersion].characterData = [
     img: "Green_Heart_(Next).png",
     opts: {
       series: ['vii', 'viir'],
-      type: ['cpu']
+      type: ['cpu'],
       form: true,
       dim: false,
       notgirl: false,
@@ -973,7 +973,7 @@ dataSet[dataSetVersion].characterData = [
     img: "Green_Heart_(Ultra_Dimension).png",
     opts: {
       series: ['v', 'rb3', 'gbh'],
-      type: ['cpu']
+      type: ['cpu'],
       form: true,
       dim: true,
       notgirl: false,
@@ -1083,7 +1083,7 @@ dataSet[dataSetVersion].characterData = [
     img: "White_Heart_(Ultra_Dimension).png",
     opts: {
       series: ['v', 'rb3', 'gbh'],
-      type: ['cpu']
+      type: ['cpu'],
       form: true,
       dim: true,
       notgirl: false,
