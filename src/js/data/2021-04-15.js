@@ -20,6 +20,7 @@ dataSet[dataSetVersion].options = [
       { name: "Hyperdimension Neptunia Re;Birth 1", key: "rb1" },
       { name: "Hyperdimension Neptunia Re;Birth 2 Sisters Generation", key: "rb2" },
       { name: "Hyperdimension Neptunia Re;Birth 3 V Generation", key: "rb3" },
+      { name: "Neptunia Virtual Stars", key: "nvs" },
     ]
   },
   {
@@ -160,7 +161,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Blanc",
     img: "Blanc.png",
     opts: {
-      series: ['hdn', 'mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'fgo', 'au', 'zomb'],
+      series: ['hdn', 'mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'fgo', 'au', 'zomb', 'nvs'],
       type: ['cpu'],
       form: false,
       dim: false,
@@ -655,7 +656,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Neptune",
     img: "Neptune.png",
     opts: {
-      series: ['hdn', 'mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'gbh', 'zomb', 'au', 'sega', 'fgo'],
+      series: ['hdn', 'mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'gbh', 'zomb', 'au', 'sega', 'fgo', 'nvs'],
       type: ['cpu'],
       form: false,
       dim: false,
@@ -699,7 +700,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Noire",
     img: "Noire.png",
     opts: {
-      series: ['hdn', 'mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'zomb', 'au', 'fgo'],
+      series: ['hdn', 'mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'zomb', 'au', 'fgo', 'nvs'],
       type: ['cpu'],
       form: false,
       dim: false,
@@ -897,7 +898,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Vert",
     img: "Vert.png",
     opts: {
-      series: ['hdn', 'mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'zomb', 'au', 'fgo'],
+      series: ['hdn', 'mk2', 'v', 'rb1', 'rb2', 'rb3', 'vii', 'zomb', 'au', 'fgo', 'nvs'],
       type: ['cpu'],
       form: false,
       dim: false,
@@ -1564,5 +1565,137 @@ dataSet[dataSetVersion].characterData = [
       dim: false,
       notgirl: false,
     },
-  }
+  },
+  {
+    name: "Me",
+    img: "Me.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: false,
+    },
+  },
+  {
+    name: "You",
+    img: "You.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: false,
+    },
+  },
+  {
+    name: "Vice",
+    img: "Vice.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: false,
+    },
+  },
+  {
+    name: "Licht",
+    img: "Licht.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: false,
+    },
+  },
+  {
+    name: "Mauli",
+    img: "Mauli.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: false,
+    },
+  },
+  {
+    name: "Kili",
+    img: "Kili.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: false,
+    },
+  },
+  {
+    name: "Faira",
+    img: "Faira.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: false,
+    },
+  },
+  {
+    name: "Nol",
+    img: "Nol.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: true,
+    },
+  },
+  {
+    name: "Dia",
+    img: "Dia.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: false,
+    },
+  },
+  {
+    name: "Sukokin",
+    img: "Sukokin.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: true,
+    },
+  },
+  {
+    name: "Kado",
+    img: "Kado.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: false,
+    },
+  },
+  {
+    name: "HERO",
+    img: "HERO.png",
+    opts: {
+      series: ['nvs'],
+      type: ['oth'],
+      form: false,
+      dim: false,
+      notgirl: true,
+    },
+  },
 ];
